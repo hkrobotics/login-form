@@ -4,15 +4,19 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>📄 Registration Form</title>
+    <title>Registration Form</title>
 
     <!-- CSS Files -->
     <link rel="stylesheet" href="./Assets/CSS/style.css">
 </head>
 <body>
-    <h1>Hello World 🐱‍💻</h1>
 
-
+    <form action="/index.html" name="myform" method="post" class="form_container" onsubmit="return validateform()" >
+        <input type="text" id="name" name="name" placeholder="Name" autocomplete="name">
+        <input type="text" id="username" name="user" placeholder="Username" autocomplete="username">
+        <input type="password" id="password" name="pass" placeholder="Password" autocomplete="new-password">
+        <button type="submit" name="submit" value="Register" class="btn">Register</button>
+    </form>
 
     <!-- JS Files -->
     <script src="./Assets/JS/app.js"></script>
