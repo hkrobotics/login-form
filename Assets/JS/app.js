@@ -3,7 +3,7 @@ function validateform() {
     var username = document.getElementById("username").value;
     var name = document.getElementById("name").value;
 
-    if (name == null || name == "") {
+    if (name == "" || name == " ") {
         alert("🙅‍♀️ Name can't be blank ");
         console.warn("🙅‍♀️ Name can't be blank ");
         return false;
